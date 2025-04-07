@@ -117,7 +117,9 @@ print('Exercise 6:', create_awesome_students())
 # For example, if foods is a tuple of ('Taco', 'Burrito', 'Sandwich'), foods_with_an_a would be a list equal to ['Taco', 'Sandwich']
 
 def filter_foods_with_a():
-    # your code here
+    foods = ['apple', 'plum', 'kiwi', 'pear']
+    foods_with_an_a = [food for food in foods if 'a' in food.lower()]
+    return foods_with_an_a
 
 # Call the function and print the result
 print('Exercise 7:', filter_foods_with_a())
